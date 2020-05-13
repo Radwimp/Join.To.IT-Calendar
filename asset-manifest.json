@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/Join.To.IT-Calendar/static/css/main.61080560.chunk.css",
-    "main.js": "/Join.To.IT-Calendar/static/js/main.55d13154.chunk.js",
-    "main.js.map": "/Join.To.IT-Calendar/static/js/main.55d13154.chunk.js.map",
+    "main.css": "/Join.To.IT-Calendar/static/css/main.903306c1.chunk.css",
+    "main.js": "/Join.To.IT-Calendar/static/js/main.85115231.chunk.js",
+    "main.js.map": "/Join.To.IT-Calendar/static/js/main.85115231.chunk.js.map",
     "runtime-main.js": "/Join.To.IT-Calendar/static/js/runtime-main.1be628d0.js",
     "runtime-main.js.map": "/Join.To.IT-Calendar/static/js/runtime-main.1be628d0.js.map",
     "static/css/2.25b83785.chunk.css": "/Join.To.IT-Calendar/static/css/2.25b83785.chunk.css",
-    "static/js/2.85aa53be.chunk.js": "/Join.To.IT-Calendar/static/js/2.85aa53be.chunk.js",
-    "static/js/2.85aa53be.chunk.js.map": "/Join.To.IT-Calendar/static/js/2.85aa53be.chunk.js.map",
+    "static/js/2.5e97f975.chunk.js": "/Join.To.IT-Calendar/static/js/2.5e97f975.chunk.js",
+    "static/js/2.5e97f975.chunk.js.map": "/Join.To.IT-Calendar/static/js/2.5e97f975.chunk.js.map",
     "index.html": "/Join.To.IT-Calendar/index.html",
-    "precache-manifest.0b4533fcaf0b87ddb8d759371f2972df.js": "/Join.To.IT-Calendar/precache-manifest.0b4533fcaf0b87ddb8d759371f2972df.js",
+    "precache-manifest.4b5be1b2191454025080cff1dd4b4e4a.js": "/Join.To.IT-Calendar/precache-manifest.4b5be1b2191454025080cff1dd4b4e4a.js",
     "service-worker.js": "/Join.To.IT-Calendar/service-worker.js",
     "static/css/2.25b83785.chunk.css.map": "/Join.To.IT-Calendar/static/css/2.25b83785.chunk.css.map",
-    "static/css/main.61080560.chunk.css.map": "/Join.To.IT-Calendar/static/css/main.61080560.chunk.css.map",
-    "static/js/2.85aa53be.chunk.js.LICENSE.txt": "/Join.To.IT-Calendar/static/js/2.85aa53be.chunk.js.LICENSE.txt"
+    "static/css/main.903306c1.chunk.css.map": "/Join.To.IT-Calendar/static/css/main.903306c1.chunk.css.map",
+    "static/js/2.5e97f975.chunk.js.LICENSE.txt": "/Join.To.IT-Calendar/static/js/2.5e97f975.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1be628d0.js",
     "static/css/2.25b83785.chunk.css",
-    "static/js/2.85aa53be.chunk.js",
-    "static/css/main.61080560.chunk.css",
-    "static/js/main.55d13154.chunk.js"
+    "static/js/2.5e97f975.chunk.js",
+    "static/css/main.903306c1.chunk.css",
+    "static/js/main.85115231.chunk.js"
   ]
 }
