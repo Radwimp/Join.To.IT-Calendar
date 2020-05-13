@@ -17,6 +17,11 @@ body {
   z-index: 5;
 }
 
+.rbc-show-more {
+  pointer-events: all;
+  width: max-content;
+}
+
 .rbc-day-bg {
   cursor: pointer;
 }

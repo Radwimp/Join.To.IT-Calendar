@@ -33,26 +33,14 @@ export default function Scheduler() {
     }
   };
 
-  const onEventResize = (type, { event, start, end, allDay }) => {
-    const index = event.indexOf(event);
-    const newEvent = { ...event, start: start, end: end };
-    setEvents([].concat(events.slice(0, index), newEvent, events.slice(index + 1)));
-  };
-
-  const onEventDrop = ({ event, start, end, allDay }) => {
-    console.log(start);
-  };
-
   return (
     <Calendar
-      selectable
+      popup
       defaultDate={moment().toDate()}
       defaultView="month"
       events={events}
       localizer={localizer}
       style={{ height: "100vh" }}
-      onEventResize={onEventResize}
-      onEventDrop={onEventDrop}
       eventPropGetter={(event) => {
         return {
           style: {
@@ -67,6 +55,8 @@ export default function Scheduler() {
             changeEvent: changeEvent.bind(null, events.indexOf(event)),
           }),
         dateCellWrapper: ({ children, value }) =>
+          Slot({ children, value, createEvent }),
+        timeSlotWrapper:({ children, value }) =>
           Slot({ children, value, createEvent }),
       }}
     />
