@@ -1,3 +1,3 @@
-# React Big Calendar with Drag and Drop
+# Calendar
 
-A simple starter for using react-big-calendar with drag and drop addon.
+Test task for Join.To.IT.
