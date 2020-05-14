@@ -3,7 +3,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import AppBar from "@material-ui/core/AppBar";
-import Scheduler from "../Scheduler";
 import NavItemList from "./NavItemList";
 import NavPanel from "./NavPanel";
 import Container from "@material-ui/core/Container";
@@ -49,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function NavContainer() {
+export default function NavContainer({ children }) {
   const classes = useStyles();
 
   return (
@@ -74,7 +73,7 @@ export default function NavContainer() {
       <main className={classes.content}>
         <Container fixed>
           <Typography className={classes.title}>Calendar</Typography>
-          <Scheduler />
+          {children}
         </Container>
       </main>
     </div>
