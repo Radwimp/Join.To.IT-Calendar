@@ -4,8 +4,16 @@ body {
   font-family: sans-serif;
 }
 
-* {
-  outline: none !important;
+*,
+.rbc-row .rbc-event:focus {
+  outline: none;
+}
+
+.calendar {
+  min-height: 72vh;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0 2px 6px #0000000a;
 }
 
 .rbc-row-content {
@@ -14,7 +22,7 @@ body {
 
 .rbc-event {
   pointer-events: all;
-  z-index: 5;
+  z-index: 4444;
 }
 
 .rbc-show-more {
@@ -24,4 +32,13 @@ body {
 
 .rbc-day-bg {
   cursor: pointer;
+}
+
+.rbc-toolbar .rbc-btn-group button.rbc-active,
+.rbc-toolbar .rbc-btn-group button:focus,
+.rbc-toolbar .rbc-btn-group button.rbc-active:focus {
+  color: #3b86ff;
+  box-shadow: none;
+  background-color: inherit;
+  border-color: #ccc;
 }

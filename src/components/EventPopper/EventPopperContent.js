@@ -21,6 +21,8 @@ const useStyles = makeStyles({
   card: {
     width: 225,
     borderRadius: 10,
+    boxShadow: '0 3px 18px #00000029',
+    border: '1px solid #43425D',
   },
   title: {
     fontSize: 14,

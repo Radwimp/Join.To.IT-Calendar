@@ -5,7 +5,7 @@ import EventPopperContent from "./EventPopperContent";
 
 const useStyles = makeStyles({
   popper: {
-    zIndex: 5,
+    zIndex: 4444,
     '&[x-placement*="bottom"] $arrow': {
       top: 0,
       left: 0,
@@ -14,7 +14,7 @@ const useStyles = makeStyles({
       height: "1em",
       "&::before": {
         borderWidth: "0 1em 1em 1em",
-        borderColor: `transparent transparent #bbbbbb transparent`,
+        borderColor: `transparent transparent #43425D transparent`,
       },
     },
     '&[x-placement*="top"] $arrow': {
@@ -25,7 +25,7 @@ const useStyles = makeStyles({
       height: "1em",
       "&::before": {
         borderWidth: "1em 1em 0 1em",
-        borderColor: `#bbbbbb transparent transparent transparent`,
+        borderColor: `#43425D transparent transparent transparent`,
       },
     },
     '&[x-placement*="right"] $arrow': {
@@ -35,7 +35,7 @@ const useStyles = makeStyles({
       width: "1em",
       "&::before": {
         borderWidth: "1em 1em 1em 0",
-        borderColor: `transparent #bbbbbb transparent transparent`,
+        borderColor: `transparent #43425D transparent transparent`,
       },
     },
     '&[x-placement*="left"] $arrow': {
@@ -45,7 +45,7 @@ const useStyles = makeStyles({
       width: "1em",
       "&::before": {
         borderWidth: "1em 0 1em 1em",
-        borderColor: `transparent transparent transparent #bbbbbb`,
+        borderColor: `transparent transparent transparent #43425D`,
       },
     },
   },

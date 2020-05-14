@@ -1,10 +1,10 @@
 import React from "react";
-import Scheduler from "./components/Scheduler";
+import NavContainer from './components/Nav/NavContainer';
 
 export default function App() {
   return (
     <div className="App">
-      <Scheduler />
+      <NavContainer />
     </div>
   );
 }

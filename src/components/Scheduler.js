@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
+import withDragAndDrop from "react-big-calendar/lib/addons/dragAndDrop";
 import Event from "./Event";
 import Slot from "./Slot";
 
 import "react-big-calendar/lib/css/react-big-calendar.css";
-
-const localizer = momentLocalizer(moment);
+import "react-big-calendar/lib/addons/dragAndDrop/styles.css";
 
 export default function Scheduler() {
   const [events, setEvents] = useState([
@@ -24,23 +24,42 @@ export default function Scheduler() {
   };
 
   const changeEvent = (index, event) => {
-    if (!!event) {
-      setEvents(
-        [].concat(events.slice(0, index), event, events.slice(index + 1))
-      );
+    let nextEvents = [...events];
+
+    if (!event) {
+      nextEvents.splice(index, 1);
     } else {
-      setEvents([].concat(events.slice(0, index), events.slice(index + 1)));
+      nextEvents.splice(index, 1, event);
     }
+
+    setEvents(nextEvents);
   };
 
+  const updateEvent = ({ event, start, end }) => {
+    const index = events.indexOf(event);
+    const updatedEvent = { ...event, start, end };
+
+    let nextEvents = [...events];
+    nextEvents.splice(index, 1, updatedEvent);
+
+    setEvents(nextEvents);
+  };
+
+  const DragAndDropCalendar = withDragAndDrop(Calendar);
+  const localizer = momentLocalizer(moment);
+
   return (
-    <Calendar
+    <DragAndDropCalendar
+      selectable
+      resizable
       popup
+      className="calendar"
       defaultDate={moment().toDate()}
       defaultView="month"
       events={events}
       localizer={localizer}
-      style={{ height: "100vh" }}
+      onEventDrop={updateEvent}
+      onEventResize={updateEvent}
       eventPropGetter={(event) => {
         return {
           style: {
@@ -55,8 +74,6 @@ export default function Scheduler() {
             changeEvent: changeEvent.bind(null, events.indexOf(event)),
           }),
         dateCellWrapper: ({ children, value }) =>
-          Slot({ children, value, createEvent }),
-        timeSlotWrapper:({ children, value }) =>
           Slot({ children, value, createEvent }),
       }}
     />
