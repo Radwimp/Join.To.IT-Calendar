@@ -22,7 +22,7 @@ body {
 
 .rbc-event {
   pointer-events: all;
-  z-index: 4444;
+  z-index: 1200;
 }
 
 .rbc-show-more {

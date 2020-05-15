@@ -5,7 +5,7 @@ import EventPopperContent from "./EventPopperContent";
 
 const useStyles = makeStyles({
   popper: {
-    zIndex: 4444,
+    zIndex: 1200,
     '&[x-placement*="bottom"] $arrow': {
       top: 0,
       left: 0,
